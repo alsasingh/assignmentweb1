@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Assignment</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width , initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="assignment.css">
+	</head>
+        <body>
+            <header>		
+                <label for="mobmenu">	 <span tabindex="1" class="menuicon" >
+                    <sup class="hamburger"></sup>    
+ 					<sup class="hamburger"></sup>
+ 					<sup class="hamburger"></sup>
+                </span>Contact</label>
+            </header>
+            <input type="checkbox" id="mobmenu">   <!-- (Edwards , 2017). -->
+            
+            <nav class="menuu">
+                      <a class="menubar" href="index.html">Home</a>
+                      <a class="menubar" href="portfolio.html" >Portfolio</a>
+                      <a class="menubar" href="contact.html" id="selected">Contact</a>
+                      <a class="menubar" href="blog.html">Blog</a>
+                      <a class="menubar" href="sitereport.html">Site Report</a>         
+				</nav>
+
+                <div class="layout">	
+					<form method="POST" action="mailto:alishasingh2056@gmail.com?subject=Form">
+						<fieldset>
+						<legend class="formhead">Contact Us</legend>
+						First Name:<br>
+						<input type="text" placeholder="Enter your first name" class="clientinfo" name="firstname" required="required">
+						<br>
+                        Middle Name:<br>
+						<input type="text" placeholder="Enter your middle name (Mandatory)" class="clientinfo" name="midname">
+						<br>
+						Last Name:<br>
+						<input type="text" placeholder="Enter your last name" class="clientinfo" name="lastname" required="required">
+						<br>
+						Email:<br>
+						<input type="email" placeholder="Enter your email" class="clientinfo" name="email" required="required">
+						<br>
+						Password:<br>
+						<input type="password" placeholder="Enter password" class="clientinfo" required="required">
+						<br>
+						Gender:<br>
+						<input type="radio" name="gender"  class="gender" value="male" required="required">Male
+						<input type="radio" name="gender" class="gender" value="female">Female
+						<input type="radio" name="gender" class="gender" value="other">Other
+						<br>
+						<input type="submit" value="Submit" class="clientinfo" id="submbtn"><br>
+
+                        <div class = "myinform">Find Me:<br>
+                            <a href="https://www.facebook.com">	<img src="facebook.jpg" alt="Facebook Logo" id="fblogo"></a> <!-- Facebook Logo :( [Anon.] , 2020). -->
+                          <br><label>Alisha Singh </label>
+                            <br>
+                           <a href="https://www.gmail.com"><img src="gmail.png" id="gmail" alt="Gmail Logo"> </a><br><label>alishasingh2056@gmail.com</label><br> <!-- Gmail Logo: ( [Anon.] , [n.d] ). -->
+                           <img src="address.jpg" id="address" alt="Address Logo"><br> <!-- Location Logo:( [Anon.] , [n.d] ).   -->
+                           <b>Gwarko, Lalitpur (Nepal)</b>
+                           </div>
+						</fieldset>
+					</form>
+                    </div>
+                    
+        </body>
+</html>

@@ -1,0 +1,415 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+	display:grid;
+	grid-template-rows:11vh 9vh auto;
+	grid-row-gap:10px;
+	grid-column-gap:20px;
+    background: linear-gradient(90deg, #38798b 0%, #3e4481 100%);
+}
+
+header{
+	text-align:center;
+	font-size:47px;
+	font-weight:bolder;
+	font-family:Monospace;
+	background:#009394;
+	text-shadow:0 0 5px #503eb4 , 0 0 10px #e2f1f1;
+	border-radius:35px;
+	grid-column:1/4;
+}
+
+.menuu{
+	display:flex;
+    flex-direction:row;
+	grid-column:1/4;
+	font-size:20px;
+	font-family:sans-serif;
+}
+
+#mobmenu{
+	display:none;
+}
+
+.menuicon{
+	display:none;
+}
+
+.menubar{
+    text-decoration:none;
+	color:#e4dcdc;
+    margin:0 10px;
+	padding:1% 1%;
+	border-radius:10px;
+}
+
+#selected{
+	background-color:#0b4f5a;
+	color:#ecf0f1;
+}
+
+.menubar:hover{
+	background-color:#0b4f5a;
+	transform:scale(1.1);
+	transition:0.1s;
+}
+                                                                      /* Homepage */
+
+.info{
+	border:1px solid #c3b2da;
+	border-radius:10px;
+    grid-area: 3/1/4/4;
+	cursor:default;
+}
+
+.mypic{
+	float:right;
+	width:400px;
+	height:auto;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#texts{
+	margin-top:2%;
+	font-size:50px;
+	color:#ffffff;
+	font-family:sans-serif;
+    padding:0 3%;
+    letter-spacing: 2px;
+}	
+
+#shortdesc{
+    font-size:25px;
+    color:#b7b8be;
+    font-family:sans-serif;
+    font-weight:lighter;
+}
+
+
+#portfoliobtn{
+    padding:1% 1%;
+    margin:0 4%;
+    font-size:20px;
+    font-weight:bold;
+    font-family:sans-serif;
+    text-decoration:none;
+    color:#e4e6ee;
+    background-color:#00758F;
+    border: 1px solid #fff;
+    border-radius:35px;
+
+}
+
+#portfoliobtn:hover{
+    transition:0.2s;
+    background-color:#00A170;
+}
+
+                                                              /* Portfolio*/
+
+ .contents{
+ 	display:grid;
+    margin-top:2%;
+ 	grid-template-columns:50% 50%;
+ 	grid-template-rows:auto;
+    grid-row-gap:40px;
+    font-family: sans-serif;
+	grid-column-gap:25px;
+}
+
+.mypf{
+	border:2px solid #4b4b8a;
+	border-radius:24px;
+    color:#ecedf0;
+	text-align:center;
+	font-size:15px;
+	box-shadow:2px 25px 15px rgba(0,0,0,0.3);
+}
+
+.dummyimg {
+	margin-top:5px;
+	width:310px;
+	border-radius: 20px;
+    height:auto;
+}
+
+                                                /* Contact */
+
+
+                                                
+fieldset{
+    border: 2px solid rgb(7, 22, 161);
+}
+
+.layout{
+	display:flex;
+    flex-direction:column;
+	align-items:center;
+	grid-area: 3/1/4/4;
+}
+
+.formhead{
+	font-weight:bold;
+	font-size:20px;
+    text-align:center;
+	color:#abc9dd;
+	cursor: default;
+}
+
+form{
+	font-family:sans-serif;
+	font-size:20px;
+	cursor: default;
+	color:#d9f1be;
+	box-shadow:2px 25px 15px rgba(56, 41, 124, 0.3);
+	width:50%;
+	text-align:center;
+	letter-spacing:2px;
+}
+
+.clientinfo{
+	font-size:17px;
+	text-align:center;
+	width:50%;
+	margin:2px 0;
+}
+
+
+.myinform{
+	text-align:center;
+	color: #eadada;
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size:20px;
+	height:330px;
+	margin:2% 0;
+	cursor: default;
+}
+
+
+#fblogo{
+	height:60px;
+	width:60px;
+	border-radius:50%;
+}
+
+
+
+#gmail{
+	height:60px;
+	margin-top:3%;
+}
+
+#address{
+	height:60px;
+	width:65px;
+	margin-top:3.5%;
+	border-radius:50%;
+}
+
+.gender{
+	cursor: pointer;
+}
+
+#submbtn{
+	margin:10px 0 30px 0;
+	width:auto;
+	cursor:pointer;
+}
+
+																/* Blog */
+.blogcontent{
+	display:grid;
+    margin-top:2%;
+ 	grid-template-columns: 32% 32% 32%;
+    font-family: sans-serif;
+	grid-column-gap:25px;
+	text-align:center;
+}
+
+.blog{
+	border:1px solid cyan;
+}
+
+.blogtxt{
+	text-align:center;
+	color:rgb(243, 245, 247);
+	font-size:20px;
+
+}
+
+.blogimg{
+	width:320px;
+	height:auto;
+	margin:10px 0;
+}
+
+																/* Site Report */
+.siterepsec{
+	grid-area: 3/1/4/4;
+	border: 1px solid #d6d6e9;
+	border-radius:25px;
+	font-family:sans-serif;
+}
+hr{
+	background-color:rgb(189, 224, 189);
+}
+.headings{
+	font-size: 35px;
+	font-weight: bold;
+	color: cyan;
+	margin: 1% 2%;
+	text-align:center;
+	text-decoration:underline;
+}
+
+.date{
+	text-decoration:none;
+	text-align:center;
+	color:#eeffee;
+	font-size: 22px;
+}
+
+.paragraph{
+	color:#eeffee;
+	padding-left: 2%;
+	padding-right: 1%;
+	font-size: 20px;
+}
+
+.assignmentimg , .htmlvalidate{
+	width: 80%;
+	height: auto;
+	margin-left: 10%;
+}
+
+.paragraph2{
+	font-size: 20px;
+	font-family: cursive;
+	text-align: center;
+	color: #e9e9f0b4;
+}
+
+.referheading{
+	font-size: 23px;
+	font-family: sans-serif;
+	color: rgba(15, 235, 235, 0.87);
+	text-align:center;
+}
+
+
+.reference{
+	padding-left: 4%;
+	font-size: 17px;
+	font-family: sans-serif;
+	color: #e2ece2;
+}
+
+.refuses{
+	padding-left:4% ;
+	font-family: sans-serif;
+	font-size: 18px;
+	color: #e5e6e3;
+}
+
+
+															/* Responsive */
+
+
+@media screen and (max-width:600px){
+	body{
+		display:grid;
+		/* grid-template-columns:10px auto; */
+	}
+	
+																/*Homepage*/
+
+
+	.mypic{
+		width: 520px;
+		margin-top:1%;
+		height: auto;
+		float: none;
+	}
+
+	.info{
+		text-align:center;
+		margin-top:-20px;
+		padding:0;
+	}
+	
+	#texts , #shortdesc{
+		margin: 5% 0;
+		font-size:20px;
+	}
+	
+	 																/*Menu*/
+
+	.menuicon{
+		cursor:pointer;
+		width:27px;
+		display:block;
+		margin-top:15px;
+		margin-left:15px;
+		float:left;
+		height:25px;
+	}
+	
+	.hamburger{
+		display:block;
+		height:3px;
+		margin:5px 0;
+		background-color:#fff;
+		width:25px;
+	}
+	
+	.menuu{
+		background-color:rgb(13, 14, 14);
+		display:none;
+		font-weight: bold;
+		border-radius:10px;
+		height:27px;
+	}
+
+	.menubar{
+		font-size:24px;
+		border-right:5px solid lightseagreen;
+		margin: 0;
+		padding: 0;
+		color:rgb(249, 252, 252);
+		border-radius:1px;
+	}
+	
+	 .selected{
+		 background: #04fa7f;
+	 }
+
+	 #mobmenu:checked + .menuu{
+			display:block;			/*  (Edwards , 2017).  */
+	}
+
+																/* Portfolio and Blog*/
+																
+	.contents, .blogcontent{
+	display:flex;
+	flex-wrap:wrap;
+	}
+
+	.mypf{
+		width:100%;
+		margin:10px 0 10px 60px;
+	}
+
+																	/* Contact */
+
+	.layout{
+		margin-left:-10%;
+	}
+
+	.blog{
+		margin:10px 0 10px 60px;
+	}
+}
